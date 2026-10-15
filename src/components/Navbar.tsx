@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Heart, Hammer, Phone } from 'lucide-react';
+import { Menu, X, Heart, Hammer } from 'lucide-react';
 
 interface NavbarProps {
   onOpenDonateModal: () => void;
@@ -21,19 +21,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDonateModal, onOpenVolunte
     <>
       {/* Top Utility Bar */}
       <div className="bg-[#002F6C] text-white text-xs py-2 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="font-semibold text-[#63BA2B]">Habitat for Humanity Niagara</span>
             <span className="hidden sm:inline text-slate-300" aria-hidden="true">·</span>
             <span className="text-slate-200">Building strength, stability, and self-reliance through shelter</span>
-          </div>
-          <div className="flex items-center gap-4 text-slate-200">
-            <a href="tel:9056857365" className="hidden md:inline-flex items-center gap-1.5 hover:text-white transition-colors">
-              <Phone className="w-3.5 h-3.5 text-[#00AFD7]" />
-              <span>(905) 685-7365</span>
-            </a>
-            <span className="hidden md:inline text-slate-400">|</span>
-            <span className="text-[11px] text-slate-300">CRA Charity # 119057530RR0001</span>
           </div>
         </div>
       </div>
@@ -56,14 +48,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDonateModal, onOpenVolunte
                 <circle cx="12" cy="11.5" r="1.5" fill="#0054A4" />
               </svg>
             </div>
-            <div className="flex flex-col">
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-[#002F6C] leading-tight">
-                Habitat <span className="font-semibold text-slate-700">Niagara</span>
-              </span>
-              <span className="text-[11px] font-semibold text-[#00843D] tracking-wider uppercase">
-                What We Do
-              </span>
-            </div>
+            <span className="font-extrabold text-lg sm:text-xl tracking-tight text-[#002F6C] leading-tight">
+              Habitat <span className="font-semibold text-slate-700">Niagara</span>
+            </span>
           </a>
 
           {/* Zone 2: 4-5 clean single-line text navigation links */}
