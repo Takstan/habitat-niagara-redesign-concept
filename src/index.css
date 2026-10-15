@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-habitat-blue: #0054A4;
+  --color-habitat-navy: #002F6C;
+  --color-habitat-cyan: #00AFD7;
+  --color-habitat-green: #00843D;
+  --color-habitat-brightgreen: #63BA2B;
+  --color-habitat-orange: #FF671F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar matching Habitat brand */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

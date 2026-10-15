@@ -1,0 +1,6 @@
+{
+  "name": "Habitat for Humanity Niagara - What We Do",
+  "description": "Building strength, stability, and self-reliance through shelter in the Niagara Region. Explore our affordable homeownership programs, ReStores, volunteer build days, and donation opportunities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
