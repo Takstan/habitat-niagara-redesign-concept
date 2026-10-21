@@ -90,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Right Column: Hero Visual Feature */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 pb-12 sm:pb-16">
             <div className="relative group">
               
               {/* Outer Decorative Frame */}
@@ -125,8 +125,8 @@ export const Hero: React.FC<HeroProps> = ({
                 {/* Measured Scrim Overlay for contrast */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none" />
 
-                {/* On-image caption banner */}
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+                {/* On-image caption banner - elevated so it never collides with bottom overlays */}
+                <div className="absolute bottom-6 left-4 right-4 sm:bottom-8 sm:left-6 sm:right-6 text-white">
                   <div className="flex items-center gap-2 text-xs font-semibold text-[#00AFD7] mb-1">
                     <span>Active Niagara Region Build Site</span>
                     <span aria-hidden="true">·</span>
@@ -138,8 +138,8 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
               </div>
 
-              {/* Decorative ReStore floating micro-callout */}
-              <div className="hidden sm:flex absolute -bottom-5 -left-5 bg-white text-slate-900 rounded-lg p-3.5 shadow-xl border border-slate-100 items-center gap-3 max-w-xs">
+              {/* Decorative ReStore floating micro-callout - positioned further down for clear text visibility */}
+              <div className="hidden sm:flex absolute -bottom-12 -left-3 sm:-bottom-14 sm:-left-4 bg-white text-slate-900 rounded-lg p-3.5 shadow-xl border border-slate-100 items-center gap-3 max-w-xs z-20">
                 <div className="w-10 h-10 rounded-md bg-[#00843D]/10 text-[#00843D] flex items-center justify-center shrink-0">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
